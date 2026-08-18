@@ -273,7 +273,7 @@ function Home() {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
           <a href="#topo" className="flex items-center gap-2.5">
             <img
-              src={logoAsset.url}
+              src={logoAsset}
               alt="Logotipo da Garden & Service Jardinagem"
               className="h-10 w-10 rounded-lg object-cover"
               width={40}
