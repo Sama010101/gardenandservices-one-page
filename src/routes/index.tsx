@@ -57,7 +57,7 @@ export const Route = createFileRoute("/")({
     meta: [{ property: "og:url", content: "https://service-garden-boost.lovable.app/" }],
     links: [
       { rel: "canonical", href: "https://service-garden-boost.lovable.app/" },
-      { rel: "preload", as: "image", href: capaAsset.url, fetchpriority: "high" },
+      { rel: "preload", as: "image", href: capaAsset, fetchpriority: "high" },
     ],
     scripts: [
       { type: "application/ld+json", children: JSON.stringify(jsonLd) },
@@ -344,7 +344,7 @@ function Home() {
         {/* HERO */}
         <section className="relative isolate overflow-hidden bg-hero-gradient pt-28 pb-16 sm:pt-36 sm:pb-24">
           <img
-            src={capaAsset.url}
+            src={capaAsset}
             alt="Folhagem verde iluminada pelo sol com a marca Garden & Service Jardinagem"
             className="absolute inset-0 -z-10 h-full w-full object-cover opacity-35"
             fetchPriority="high"
@@ -504,10 +504,10 @@ function Home() {
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
-                { src: depois1.url, alt: "Jardim residencial com canteiro tropical, seixos e iluminação após o serviço" },
-                { src: resultado.url, alt: "Equipe finalizando gramado e canteiros de flores em área comercial" },
-                { src: resultado2.url, alt: "Canteiro de flores coloridas ao redor de palmeira em condomínio" },
-                { src: resultado3.url, alt: "Canteiro florido com palmeiras em entrada de condomínio" },
+                { src: depois1, alt: "Jardim residencial com canteiro tropical, seixos e iluminação após o serviço" },
+                { src: resultado, alt: "Equipe finalizando gramado e canteiros de flores em área comercial" },
+                { src: resultado2, alt: "Canteiro de flores coloridas ao redor de palmeira em condomínio" },
+                { src: resultado3, alt: "Canteiro florido com palmeiras em entrada de condomínio" },
               ].map((img, i) => (
                 <Reveal key={img.src} delay={i * 60}>
                   <img
@@ -678,7 +678,7 @@ function Home() {
           {/* Título coluna 1 */}
           <div className="flex items-center justify-center gap-2.5 sm:col-start-1 sm:row-start-1">
             <img
-              src={logoAsset.url}
+              src={logoAsset}
               alt="Logotipo da Garden & Service Jardinagem"
               className="h-10 w-10 rounded-lg object-cover"
               width={40}
