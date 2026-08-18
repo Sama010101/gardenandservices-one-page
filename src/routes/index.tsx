@@ -1,12 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Reveal } from "@/components/Reveal";
-import logoAsset from "@/assets/newlogo.png.asset.json";
-import capaAsset from "@/assets/newcapa.png.asset.json";
-import depois1 from "@/assets/Depois_1.jpg.asset.json";
-import resultado from "@/assets/Resultado.jpg.asset.json";
-import resultado2 from "@/assets/Resultado_2.jpg.asset.json";
-import resultado3 from "@/assets/Resultado_3.jpg.asset.json";
+import logoAsset from "@/assets/newlogo.png";
+import capaAsset from "@/assets/newcapa.png";
+import depois1 from "@/assets/Depois_1.jpg";
+import resultado from "@/assets/Resultado.jpg";
+import resultado2 from "@/assets/Resultado_2.jpg";
+import resultado3 from "@/assets/Resultado_3.jpg";
 
 const WHATS = "https://wa.me/5511978893612";
 const wa = (msg: string) => `${WHATS}?text=${encodeURIComponent(msg)}`;
